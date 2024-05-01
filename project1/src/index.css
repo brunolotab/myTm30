@@ -1,0 +1,21 @@
+@font-face {
+  font-family: fontbold;
+  src: url(./assets/font/mollen-personal-use/Mollen-Personal-Use-Bold.otf);
+  font-display: swap;
+}
+@font-face {
+  font-family: regular;
+  src: url(./assets/font/mollen-personal-use/Mollen-Personal-Use-Regular.otf);
+  font-display: swap;
+}
+* {
+  font-family: regular;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0; 
+}

@@ -35,16 +35,21 @@ export default Profile
 
 const Civ = styled.div`
     .pro-1 {
-        display: flex;
+        /* display: flex;
         justify-content: flex-start;
         padding: 15px 0px 25px 70px;
         gap: 30px;
-        background-color: #f9fafb;
+        background-color: #f9fafb; */
         /* background-color:; */
         /* border: 1px solid green; */
+        /* width: 100px; */
+        display: flex;
+        flex-wrap: 40%;
+        padding: 2rem;
     }
     .image-1 {
-        width: 750px;
+        /* width: 750px; */
+        width: 70%;
         height: 576px;
         /* border: 1px solid red; */
         
@@ -58,26 +63,53 @@ const Civ = styled.div`
         font-size: 40px;
         width: 500px;
     }
+    .pro-2 {
+            width: 50%;
+            // border: 1px solid red;
+            margin-right:20px;
+        }
 
     @media (max-width: 800px) {
         .pro-1 {
-            // width: 100%;
+            /* width: 100%; */
             // display: block;
             // ma
         // justify-content: flex-start;
         // padding: 15px 0px 25px 70px;
         // gap: 30px;
+        /* display: flex; */
+        /* flex-wrap: 60%; */
+        gap: 20px;
         }
         .pro-2 {
+            width: 57%;
+            // border: 1px solid red;
+        }
+        .image-1 {
+            width: 40%;
+        }
+        
+    }
+    @media (max-width: 500px) {
+        .pro-1 {
+            display: block;
             width: 100%;
+            padding: 0px;
+            margin: 10px;
         }
         .image-1 {
             width: 100%;
+            margin-top: 20px;
+            
         }
     }
     @media (max-width: 250px) {
+        padding: 0px;
+            margin: 10px;
         .pro-1 {
-            text-align: center;
+            display: block;
+            width: 100%;
+          text-align: center;
         }
     }
 `

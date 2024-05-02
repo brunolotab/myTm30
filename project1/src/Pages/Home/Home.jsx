@@ -23,7 +23,7 @@ function Home() {
 
                 <div className='content'>
                     <div >
-                        <h1 style={{
+                        <h1 className='contenthead' style={{
                             textAlign: 'center', fontWeight: 'border',
                             fontSize: '80px', lineHeight: '5.8rem', color: 'white', position: 'relative',
                             top: '-100px'
@@ -145,18 +145,21 @@ const Div = styled.div`
         
     }
 
-    @media(max-width: 800px){
+    @media screen and (max-width: 800px){
+        margin: 0px;
+            /* padding: 0px; */
         .main {
             width: 100%;
-            padding: 18px;
+            /* padding: 18px; */
+            
             
         }
-        .content {
-            width: 100%;
-        }
-         h1 {
-            /* font-size: 22px; */
-            color: red;
+        // .content {
+        //     width: 100%;
+        // }
+         .contenthead {
+            font-size : 10px ;
+            color: red; 
         }
         .backtrust {
             width: 100%;
@@ -166,5 +169,22 @@ const Div = styled.div`
             width: 100%;
             position: absolute;
         }
+    }
+    @media(max-width: 250px){
+
+    }
+    @media(max-width: 250px) {
+        .main{
+            width: 250px;
+            display: block;
+            
+            
+        }
+        .bg-video {
+            width: 90%;
+            height: 50%;
+
+        }
+
     }
 `

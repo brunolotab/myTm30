@@ -160,11 +160,17 @@ a.active {
 } */
 @media(max-width: 250px){
   .sidebar {
-    width: 100%;
+    /* width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: center; */
+   display: block;
+   width: 100%;
+   text-align: center;
+   font-size: 27px;
+   font-weight: 700;
+   color: #000;
   }
 }
 

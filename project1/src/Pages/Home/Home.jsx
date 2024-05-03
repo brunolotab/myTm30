@@ -23,24 +23,21 @@ function Home() {
 
                 <div className='content'>
                     <div >
-                        <h1 className='contenthead' style={{
-                            textAlign: 'center', fontWeight: 'border',
-                            fontSize: '80px', lineHeight: '5.8rem', color: 'white', position: 'relative',
-                            top: '-100px'
-                        }}>Pioneering innovation in
+                        <h1 className='contenthead'>
+                            Pioneering innovation in
                             <br />Software Solutions.
 
                         </h1>
                     </div>
-                    <div style={{ position: 'relative', top: '-120px' }}>
-                        <div>
-                            <p style={{ textAlign: 'center', color: '#fff' }}>
+                    <div className='subcontent'>
+                        {/* <div className='subcontent2'> */}
+                            <p className='subcontent3'>
                                 <span style={{ fontWeight: 'bold' }}>Tm30 Global Limited ,</span> a leading software solution company<br />
                                 at the forefont of revolutionizing industries through<br />
                                 cutting-edge technologies and inovative software<br />
                                 development.
                             </p>
-                        </div>
+                        {/* </div> */}
                         <div className='btn' style={{ textAlign: 'center' }}>
                             <button style={{
                                 padding: '15px', background: '#00A3F6',
@@ -112,6 +109,23 @@ const Div = styled.div`
         /* left: 25%; */
         
     }
+    .contenthead {
+        text-align: center;
+         font-weight: border;
+        font-size: 80px;
+         line-height: 5.8rem;
+          color: white;
+           position: relative;
+            top: -100px;
+    }
+    .subcontent {
+        position: relative; 
+         top: -120px;
+    }
+    .subcontent3 {
+        text-align: center;
+         color: #fff;
+    }
     .backtrust {
         position: relative;
         top: -50px;
@@ -147,19 +161,18 @@ const Div = styled.div`
 
     @media screen and (max-width: 800px){
         margin: 0px;
-            /* padding: 0px; */
         .main {
-            width: 100%;
-            /* padding: 18px; */
-            
-            
+            width: 100%; 
         }
-        // .content {
-        //     width: 100%;
-        // }
+        .content {
+            width: 100%;
+         } 
          .contenthead {
-            font-size : 10px ;
+            font-size : 35px ;
             color: red; 
+            line-height: 3rem;
+            padding-top: 12px;
+            font-weight: 700;
         }
         .backtrust {
             width: 100%;
@@ -170,8 +183,13 @@ const Div = styled.div`
             position: absolute;
         }
     }
-    @media(max-width: 250px){
-
+    @media screen and (max-width: 500px){
+        .subcontent3 {
+            
+            font-size: 20px;
+            color: blue;
+        }
+        
     }
     @media(max-width: 250px) {
         .main{

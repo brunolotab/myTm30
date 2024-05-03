@@ -19,7 +19,7 @@ function Navbar() {
     return (
         <Piv>
             <section>
-                {/* <div><p style={{fontSize:'20px'}}>tm<span style={{color:'blue'}}>30</span></p></div> */}
+                
                 <div className='logo'><img src={Logo} alt=''/></div>
                    
                     <div className='main'>
@@ -32,7 +32,7 @@ function Navbar() {
                 
                 <div className='detail'>
                     <NavLink to = {'/About'}><div className='hideonmobile' >About</div></NavLink>
-                    <NavLink to ={'/Contact'}><div className='hideonmobile' style={{padding:'1rem 2rem', borderRadius:'10px',color:'#fff', background:'#00a9ff'}}>Contact</div></NavLink>
+                    <NavLink to ={'/Contact'}><div className='hideonmobile'> <div className='contact'>Contact</div></div></NavLink>
                     <div className='menu-button' onClick={showsidebar}><BiMenu style={{fontSize:'26px'}}/></div>
                 </div>
                 <div className='sidebar'>
@@ -43,7 +43,7 @@ function Navbar() {
                         <NavLink to = {'/Projects'}><div>Projects</div></NavLink>
                         <NavLink to = {'/Careers'}><div>Careers</div></NavLink>
                         <NavLink to = {'/About'}><div>About</div></NavLink>
-                        <NavLink to ={'/Contact'}><div style={{padding:'1rem 2rem', borderRadius:'10px',color:'#fff', background:'#00a9ff'}}>Contact</div></NavLink>
+                        <NavLink to ={'/Contact'}><div className='contact' >Contact</div></NavLink>
                 
                     </div>
             </section>
@@ -94,6 +94,7 @@ div {
 .detail {
     display: flex;
     justify-content: space-between;
+    align-items: center ;
     gap: 2rem;
     
 
@@ -139,10 +140,25 @@ a.active {
   
 }
 
-@media(max-width: 800px){
+.contact {
+    padding: 1rem 2rem; 
+    border-radius: 10px;
+    color:#fff;
+     background:#00a9ff;
+}
+@media(max-width: 1080px){
+    .main{
+        font-size: 16px;
+    
+    }
+    .detail {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 1075px){
   .hideonmobile {
     display: none;
-    overflow-x: none;
   }
   .menu-button {
     display: block;
@@ -158,7 +174,7 @@ a.active {
     
   }
 } */
-@media(max-width: 250px){
+@media(max-width: 600px){
   .sidebar {
     /* width: 100%;
    display: flex;

@@ -7,12 +7,12 @@ function Profile() {
     return (
         <Civ>
             <div className='pro-1'>
-                <div className='pro-2' style={{ marginTop: '80px' }}>
-                    <h1>
-                        Empowering the Future <br />
+                <div className='pro-2' style={{ marginTop: '50px' }}>
+                    <h1 className='pro-3' style={{color: '#00A9ff'}}>
+                        Empowering the Future 
                         With Inovative Software.
                     </h1>
-                    <div style={{ width: '450px', fontSize: '19px', lineHeight: '1.6rem' }} >
+                    <div className='pro-4'>
                         At TM30 Global Limited, we are more than just a software development firm; we are pioneers, trailblazers, and visionaries. Our team of talented engineers, designers, and strategists are dedicated to crafting bespoke software solutions that align with our clients' unique objectives, empowering them to achieve their goals with utmost efficiency and innovation.
                         <div style={{ marginTop: '8px' }}>
                             <button style={{ background: '#00A9ff', border: 'none', fontSize: '16px', padding: '12px 33px', color: '#fff', borderRadius: '5px' }}>
@@ -45,7 +45,8 @@ const Civ = styled.div`
         /* width: 100px; */
         display: flex;
         flex-wrap: 40%;
-        padding: 2rem;
+        padding: 3rem;
+        background-color: #f9fafb; 
     }
     .image-1 {
         /* width: 750px; */
@@ -68,25 +69,33 @@ const Civ = styled.div`
             // border: 1px solid red;
             margin-right:20px;
         }
+    .pro-4 {
+        width: 450px;
+         font-size: 19px;
+          line-height: 1.6rem; 
+          color: #717a8e;
+    }
 
-    @media (max-width: 800px) {
+    @media (max-width: 1075px) {
         .pro-1 {
-            /* width: 100%; */
-            // display: block;
-            // ma
-        // justify-content: flex-start;
-        // padding: 15px 0px 25px 70px;
-        // gap: 30px;
-        /* display: flex; */
-        /* flex-wrap: 60%; */
-        gap: 20px;
+            
+         display: block;
+         /* padding: 80px; */
         }
         .pro-2 {
-            width: 57%;
-            // border: 1px solid red;
+            width: 100%;
+            border: 1px solid red;
+        }
+        .pro-3 {
+            width: 80%;
+        }
+        .pro-4 {
+            width: 100%;
         }
         .image-1 {
-            width: 40%;
+            width: 100%;
+            margin-top: 50px;
+
         }
         
     }
@@ -94,7 +103,7 @@ const Civ = styled.div`
         .pro-1 {
             display: block;
             width: 100%;
-            padding: 0px;
+            /* padding: 0px; */
             margin: 10px;
         }
         .image-1 {

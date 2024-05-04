@@ -119,7 +119,7 @@ a.active {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 700px;
   z-index: 999;
   background-color: #fff;
   backdrop-filter: blur(10px);
@@ -156,7 +156,7 @@ a.active {
     }
 }
 
-@media(max-width: 1075px){
+@media(max-width: 1050px){
   .hideonmobile {
     display: none;
   }
@@ -165,6 +165,7 @@ a.active {
   } 
   .sidebar {
     display: block;
+    height: 100vh;
     
   }
 } 
@@ -174,7 +175,7 @@ a.active {
     
   }
 } */
-@media(max-width: 600px){
+@media(max-width: 700px){
   .sidebar {
     /* width: 100%;
    display: flex;
@@ -182,11 +183,13 @@ a.active {
    justify-content: center;
    align-items: center; */
    display: block;
-   width: 100%;
-   text-align: center;
+   /* width: 100%; */
+   text-align: left;
    font-size: 27px;
-   font-weight: 700;
+   /* font-weight: 200; */
    color: #000;
+   height: 100%;
+   line-height: 4.6rem;
   }
 }
 

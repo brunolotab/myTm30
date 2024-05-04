@@ -25,7 +25,8 @@ function Home() {
                     <div >
                         <h1 className='contenthead'>
                             Pioneering innovation in
-                            <br />Software Solutions.
+                            <br />
+                            Software Solutions.
 
                         </h1>
                     </div>
@@ -46,18 +47,24 @@ function Home() {
                         </div>
                     </div>
                 </div>
-
+            </div>
+            
                 {/* <h1 style={{position:'absolute',top:'20%',left:'20%',zIndex:'999'}}>lotanna</h1> */}
-
+            <div style={{backgroundColor:'#f9fafb'}}>
+           
                 <div className='backtrust'>
                     <div className='backtrust1'><p style={{ width: '190px' }}>Trusted partners </p><p>worldwide</p></div>
-                    <div style={{ padding: '0px 98px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '850px' }}>
+                    <div className='backtruststyle'>
                         <Slide />
                     </div>
                 </div>
+           
+            
 
                 {openModal && <ModalRequest closeModal={setOpenModal} />}
                 <Profile />
+            </div>
+            <div>
                 <div style={{ background: '#fff' }}><BodyGrid /></div>
                 <div style={{background:'#f9fbfa', padding:'7rem 5rem 5rem 5rem'}}>
                     <div style={{color:'#24b0ff', fontSize:'19px'}}>Our Unique Solutions include</div><br/>
@@ -87,7 +94,7 @@ export default Home
 const Div = styled.div`
 .main {
     width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
   padding: 0;
 }
@@ -117,6 +124,7 @@ const Div = styled.div`
           color: white;
            position: relative;
             top: -100px;
+            
     }
     .subcontent {
         position: relative; 
@@ -152,6 +160,14 @@ const Div = styled.div`
         /* margin-left: -385px; */
         
     }
+    .backtruststyle {
+        padding: 0px 98px ;
+         display: flex ;
+          justify-content: center;
+           align-items: center;
+            width: 850px;
+            border: 1px solid red;
+    }
     .bg-video {
         width: 100%;
         height: 640px;
@@ -159,39 +175,46 @@ const Div = styled.div`
         
     }
 
-    @media screen and (max-width: 800px){
-        margin: 0px;
-        .main {
+    @media screen and (max-width: 1033px){
+        /* .main {
             width: 100%; 
         }
         .content {
             width: 100%;
-         } 
+         }  */
          .contenthead {
-            font-size : 35px ;
-            color: red; 
+            font-size : 3rem ;
+            /* color: red;  */
             line-height: 3rem;
             padding-top: 12px;
-            font-weight: 700;
+            /* font-weight: 900; */
+            text-align: justify;
         }
         .backtrust {
+            /* width: 90%; */
+            /* position: relative; */
+            /* margin-right: 200px; */
+            margin: 0px 40px;
+
+        }
+        .backtruststyle {
             width: 100%;
-            position: relative;
+            padding-right: 40px;
         }
         .btn {
             width: 100%;
             position: absolute;
         }
     }
-    @media screen and (max-width: 500px){
+    /* @media screen and (max-width: 500px){
         .subcontent3 {
             
             font-size: 20px;
             color: blue;
         }
         
-    }
-    @media(max-width: 250px) {
+    } */
+    @media(max-width: 600px) {
         .main{
             width: 250px;
             display: block;

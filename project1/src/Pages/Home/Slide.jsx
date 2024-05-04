@@ -74,5 +74,13 @@ const Siv = styled.div `
         transform: translateX(-100%)
     }
     } 
+
+    @media screen and  (max-width: 1030px){
+        .slide-track {
+            /* width: 90%; */
+            /* margin-left: 30px; */
+            /* padding-right: 30px; */
+        }
+    }
 `
 

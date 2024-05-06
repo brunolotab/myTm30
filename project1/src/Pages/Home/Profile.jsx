@@ -78,7 +78,7 @@ const Civ = styled.div`
 
     @media (max-width: 1075px) {
         .pro-1 {
-            
+            margin-top: -50px;
          display: block;
          /* padding: 80px; */
         }

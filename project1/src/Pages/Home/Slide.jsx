@@ -43,14 +43,15 @@ const Siv = styled.div `
         margin: auto;
         overflow: hidden;
         position: relative;
-        width: 80%;
+       width: 80%;
         /* padding: 2px; */
     }
     .slider .slide-track {
         -webkit-animation: Scroll 30s linear infinite;
         animation: Scroll 30s linear infinte;
         display: flex;
-        width: calc (250 * 14)
+        width: calc (250 * 14);
+        /* border: 1px solid green; */
     }
     .slider .slide {
         /* height: 60px; */
@@ -75,12 +76,59 @@ const Siv = styled.div `
     }
     } 
 
-    @media screen and  (max-width: 1030px){
-        .slide-track {
+    /* @media screen and (max-width:1075px){ */
+    @media screen and (max-width:1075px){
+
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .slider {
             /* width: 90%; */
             /* margin-left: 30px; */
             /* padding-right: 30px; */
+            width: 58%;
+            left: -150px;
         }
     }
+    /* @media (min-width: 851px) and (max-width:1040px){
+        .slider {
+            
+            width: 50%;
+        }
+    } */
+     /* @media screen and  (max-width: 1150px) and (min-width: 751px){ */
+     @media screen and  (max-width: 992px) and (min-width: 769px){
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .slider {
+            
+            width: 43%;
+            left: -10px;
+        }
+    } 
+     /* @media screen and  (max-width: 750px) and (min-width: 500px){ */
+     @media screen and  (max-width: 768px) and (min-width: 500px){
+        html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .slider {
+            
+            width: 30%;
+            left: -70px;
+        }
+    } 
 `
 

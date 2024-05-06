@@ -8,7 +8,7 @@ function BodyGrid() {
             
             <div className='gridcontainer-1'>
                 <h1 style={{color:'#31b4ff', textTransform:'capitalize'}}>leaverage our cutting-edge technology </h1>
-                <div><p>TM30 leverages  state-of-the art technologies to deliver  supiror solutions that wide
+                <div className='gridcontainer2'><p>TM30 leverages  state-of-the art technologies to deliver  supiror solutions that wide
                     range of <div>industries: Fininace institition, Telecommunications, Enterprises, Retail, Energy 
                      and Utility,</div> Education, Government and Public Sectors</p></div>
             </div>
@@ -91,13 +91,25 @@ const Ziv = styled.div `
     color: #000;
   }
 
-  @media (max-width:800px){
+  /* @media (max-width:px){
+    .gridwrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  } */
+
+  @media (max-width:850px){
+    .gridcontainer {
+      font-size: 1.8rem;
+    }
+    .gridcontainer2 {
+      font-size: 20px;
+    }
     .gridwrapper {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @media(max-width: 250px){
+  @media(max-width: 600px){
     .gridwrapper {
       grid-template-columns: repeat(1, 1fr);
     }

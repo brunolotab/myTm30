@@ -119,7 +119,7 @@ a.active {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 700px;
+  width: 400px;
   z-index: 999;
   background-color: #fff;
   backdrop-filter: blur(10px);
@@ -129,6 +129,7 @@ a.active {
   align-items: flex-start;
   justify-content: flex-start;
   line-height: 3rem;
+  
 
 }
 .menu-button {
@@ -154,9 +155,10 @@ a.active {
     .detail {
         font-size: 16px;
     }
+   
 }
 
-@media(max-width: 1050px){
+@media screen and (max-width: 1050px){
   .hideonmobile {
     display: none;
   }
@@ -165,32 +167,35 @@ a.active {
   } 
   .sidebar {
     display: block;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     
   }
 } 
-/* @media (min-width: 801px){
-    .sidebar {
-    display: none;
-    
-  }
+/* @media screen and (max-width: 998px) {
+    .sidebar{
+        height: 100vh;
+        height: 100%;
+    }
 } */
-@media(max-width: 700px){
+
+@media screen and (max-width: 600px){
   .sidebar {
-    /* width: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; */
-   display: block;
-   /* width: 100%; */
+    height: 100vh;
+   /* display: block; */
+   /* display: none;  */
+   width: 100%;
    text-align: left;
    font-size: 27px;
    /* font-weight: 200; */
    color: #000;
    height: 100%;
    line-height: 4.6rem;
+   padding-left: 0.5rem;
   }
+ 
 }
+
+
 
 `

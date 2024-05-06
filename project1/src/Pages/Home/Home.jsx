@@ -15,7 +15,7 @@ function Home() {
     return (
         <Div  >
             <div className='main' >
-                <div style={{ width: '100%' }}>
+                <div style={{ maxwidth: '100%' }}>
                     <video loop autoPlay muted className='bg-video'>
                         <source src={(Main1)} type='video/mp4' />
                     </video>
@@ -52,14 +52,12 @@ function Home() {
                 {/* <h1 style={{position:'absolute',top:'20%',left:'20%',zIndex:'999'}}>lotanna</h1> */}
             <div style={{backgroundColor:'#f9fafb'}}>
            
-                <div className='backtrust'>
+            <div className='backtrust'>
                     <div className='backtrust1'><p style={{ width: '190px' }}>Trusted partners </p><p>worldwide</p></div>
                     <div className='backtruststyle'>
                         <Slide />
                     </div>
-                </div>
-           
-            
+                </div>          
 
                 {openModal && <ModalRequest closeModal={setOpenModal} />}
                 <Profile />
@@ -93,10 +91,10 @@ export default Home
 
 const Div = styled.div`
 .main {
-    width: 100%;
-  /* overflow: hidden; */
-  margin: 0;
-  padding: 0;
+    width: 100%; 
+   /* overflow: hidden;  */
+     margin: 0;
+     padding: 0;
 }
     .content {
         position: absolute;
@@ -147,7 +145,8 @@ const Div = styled.div`
         border-top-left-radius: 10px;
         margin: 0px 30px;
         /* gap: 40px; */
-       
+        border: 1px solid yellow;
+        max-width: 91%; 
         
     }
     .backtrust1 {
@@ -165,8 +164,8 @@ const Div = styled.div`
          display: flex ;
           justify-content: center;
            align-items: center;
-            width: 850px;
-            border: 1px solid red;
+            max-width: 850px;
+            /* border: 1px solid red; */
     }
     .bg-video {
         width: 100%;
@@ -175,57 +174,126 @@ const Div = styled.div`
         
     }
 
+    @media screen and (max-width: 1041px) {
+            html,body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .backtrust{
+            /* margin-right: -100px; */
+            width: 100%;
+        }
+        .backtruststyle {
+            margin-right: 0;
+            width: 60%;
+
+        }
+    }
+
     @media screen and (max-width: 1033px){
         /* .main {
             width: 100%; 
-        }
+            overflow: hidden;
+        }  */
         .content {
             width: 100%;
-         }  */
+         }  
          .contenthead {
-            font-size : 3rem ;
+            font-size : 3.8rem ;
             /* color: red;  */
-            line-height: 3rem;
+            line-height: 3.5rem;
             padding-top: 12px;
-            /* font-weight: 900; */
+            font-weight: 900;
             text-align: justify;
+            display: block;
         }
-        .backtrust {
-            /* width: 90%; */
-            /* position: relative; */
-            /* margin-right: 200px; */
-            margin: 0px 40px;
+        .subcontent {
+            display: block;
+        }
+       
+        .backtruststyle {
+            width: 360px;
+            
+        }
+       
+    }
+
+  
+    @media screen and (max-width: 805px){
+        .contenthead {
+            margin-top: 90px;
+            font-weight: 900;
+            font-size: 3rem;
+            text-align: center;
 
         }
-        .backtruststyle {
-            width: 100%;
-            padding-right: 40px;
-        }
-        .btn {
-            width: 100%;
-            position: absolute;
-        }
-    }
-    /* @media screen and (max-width: 500px){
         .subcontent3 {
             
-            font-size: 20px;
-            color: blue;
+            font-size: 22px;
+            line-height: 3rem;
+        }
+        .backtrust{
+            height: 80%;
+        }
+        .backtrust1{
+            width: 140px;
         }
         
-    } */
-    @media(max-width: 600px) {
+    }
+
+    @media screen and (max-width: 685px) {
+        .contenthead{
+            font-size: 2.8rem;
+        }
+        .subcontent3 {
+            font-size: 20px;
+            line-height: 2.7rem;
+            color: red;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
         .main{
-            width: 250px;
+            width: 100%;
             display: block;
             
             
         }
-        .bg-video {
-            width: 90%;
-            height: 50%;
+        .content {
+            /* display: relative; */
+            height: 100%;
+            /* font-size: 1rem; */
+        }
+        .contenthead {
+            margin-top: 90px;
+            font-size: 2rem;
+            line-height: normal;
 
         }
+        .subcontent3 {
+            font-size: 18px;
+            line-height: normal;
+           
+
+        }
+        .bg-video {
+            width: 100%;
+            height: 450px;
+
+        }
+        .subcontent {
+            display: block;
+        }
+        /* .backtrust {
+            position: relative;
+            top: 200px;
+            margin-bottom: 60px;
+        } */
 
     }
+
+    
 `

@@ -26,7 +26,7 @@ function Solutions() {
                             {
                                 ourSolutions.map((item, i) => 
                                     (<div key={i} className='oursolution'>
-                                        <div><h1 className='op-1' style={{color:'#000', lineHeight:'2.4rem'}}>{item.title}</h1>
+                                        <div className='op-1'><h1 style={{color:'#000'}} >{item.title}</h1>
                                         <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
                                         </div>
                                         <div className='op-2'><img src={item.image} /></div>
@@ -66,7 +66,7 @@ width: 100%;
     background-color: #66d5f3;
     /* -webkit-animation: sol 5s linear infinite ; */
     /* transition: all 2s; */
-    width: 80%;
+    width: 85%;
     height: 250px;
     line-height: 2.5rem;
     color: #fff;
@@ -80,10 +80,11 @@ width: 100%;
     grid-auto-rows: 450px;
     padding: 1rem ;
     grid-gap: 130px;
+    padding: 0px 1rem;
 
   }
   .oursolution:nth-child(even) {
-    /* background-color: red; */
+    background-color: red;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center ;
@@ -107,7 +108,7 @@ width: 100%;
   .op-1 {
     width: 320px;
     line-height: 1.6;
-    padding-left: 30px;
+    padding-left: 0px;
   }
   .op-2 {
     width: 750px;
@@ -126,5 +127,93 @@ width: 100%;
         color: #fff;
          border-Radius: 5px;
   }
+  /* @media screen and (max-width: 1041px) */
+   @media screen and (max-width: 1075px){
+    .solution-wrapper {
+      padding: 1rem;
+    }
+    .flexsolution{
+      padding: 3.5rem;
+      border: 1px solid red;
+      gap: 160px;
+      
+    }
+  
+    .op-1{
+      width: 250px;
+      font-size: 18px;
+      padding-right: 30px;
+    }
+    .op-2{
+      width: 400px;
+      height: 370px;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      padding-right: 2rem;
+      border: 1px solid yellow;
+      
+    }
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    
+  } 
+
+  @media screen and (max-width: 903px){
+   
+    .container {
+      font-size: 14px;
+      height: 180px;
+      line-height: normal;
+
+    }
+    h2{
+      color: blue;
+      font-size: 24px;
+      font-weight: 900;
+    }
+  
+  .flexsolution {
+    /* display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;*/
+    margin-top: -70px;
+    display: block;
+    
+
+  } 
+   .oursolution {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 0px; */
+    display: block;
+    margin-left: -20px; 
+    
+    
+  }
+  .oursolution:nth-child(even){
+    /* display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    color: blue; */
+    display: block;
+    
+
+  }
+  .op-1 {
+    width: 90%;
+    font-size: 16px;
+  }
+  button {
+    margin-left: -20px; 
+
+  }
+  .op-2 {
+    width: 95%;
+  }
+}
 `
 

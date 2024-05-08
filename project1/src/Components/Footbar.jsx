@@ -4,38 +4,40 @@ import styled from 'styled-components'
 function Footbar() {
     return (
         <Tiv>
-            <div style={{ padding: '1.5rem' }}>
+            <div className='main-container' style={{ padding: '1.5rem' }}>
                 <div className='main-wrapper'>
                     <div className='wrapper-1'>
                         <div style={{ fontSize: '30px' }}>tm<span style={{ color: '#00a9ff' }}>30</span></div>
                         <div>29A Berkley Street, Off King George Road, Onikan Lagos Lagos</div>
                         <div>facbk<span>twiter</span><span>linked</span>youtube</div>
                     </div>
-                    <div className='wrapper-2'>
-                        <h4 style={{ color: '#00a9ff' }}>Product</h4>
-                        <p>Paymybills</p>
-                        <p>Edusponsor</p>
-                        <p>Backup cash</p>
-                        <p>Residify</p>
-                        <p>AdashiEsususAkawo</p>
-                    </div>
-                    <div className='wrapper-2'>
-                        <h4 style={{ color: '#00a9ff' }} >Solution</h4>
-                        <p>Agency Banking</p>
-                        <p>Bank Pro</p>
-                        <p>SoftPOS</p>
-                        <p>TMSaas</p>
-                        <p>ESMP</p>
-                        <p>SEAP</p>
-                    </div>
-                    <div className='wrapper-2'>
-                        <h4 style={{ color: '#00a9ff' }}>Company</h4>
-                        <p>About us</p>
-                        <p>Career</p>
-                        <p>Products</p>
-                        <p>Projects</p>
-                        <p>Contact</p>
-                        <p>Privacy Policy</p>
+                    <div className='container'>
+                        <div className='wrapper-2'>
+                            <h4 style={{ color: '#00a9ff' }}>Product</h4>
+                            <p>Paymybills</p>
+                            <p>Edusponsor</p>
+                            <p>Backup cash</p>
+                            <p>Residify</p>
+                            <p>AdashiEsususAkawo</p>
+                        </div>
+                        <div className='wrapper-2'>
+                            <h4 style={{ color: '#00a9ff' }} >Solution</h4>
+                            <p>Agency Banking</p>
+                            <p>Bank Pro</p>
+                            <p>SoftPOS</p>
+                            <p>TMSaas</p>
+                            <p>ESMP</p>
+                            <p>SEAP</p>
+                        </div>
+                        <div className='wrapper-2'>
+                            <h4 style={{ color: '#00a9ff' }}>Company</h4>
+                            <p>About us</p>
+                            <p>Career</p>
+                            <p>Products</p>
+                            <p>Projects</p>
+                            <p>Contact</p>
+                            <p>Privacy Policy</p>
+                        </div>
                     </div>
                 </div>
                 <div className='wrapper-3'>
@@ -50,12 +52,15 @@ function Footbar() {
 export default Footbar
 
 const Tiv = styled.div`
-    .main-wrapper {
+    .main-wrapper { 
         display: flex;
-        justify-content: space-around;
-        margin: 1rem 3rem ;
+        /* display: block; */
+        margin: 6rem 3rem ;
         height: 460px;
-        border-bottom: 1px solid grey;
+        padding-bottom: 2.4rem;
+        /* border-bottom: 1px solid grey; */
+        /* justify-content: space-around; */
+
 
     }
     .wrapper-1 {
@@ -67,13 +72,64 @@ const Tiv = styled.div`
         
 
     }
-    .wrapper-2 {
+    .container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column; */
+        align-items: start;
+        justify-content: space-between;
+        /* justify-content: center; */
+       
+    }
+    .wrapper-2 {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: start; */
+        /* justify-content: start;  */
+        /* justify-content: space-between; */
+
+        font-size: 14px;
+        line-height: 1.6rem;
+        border: 1px solid red;
 
     }
     .wrapper-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 3rem ;
+        border-top: 1px solid #bbb;
+        font-size: 12px;
+        font-weight: bolder;
+        color: #717a8e;
+        /* position: relative;
+        top: -220px;*/
+        line-height: 5.4rem;  
+    }
+
+    @media screen and (max-width: 1075px ) {
+        .main-wrapper{
+            display: block;
+        }
+        .container{
+            display: flex;
+             justify-content: space-between;
+
+            /* justify-content: start; */
+        /* align-items: start; */
+
+        }
+        .wrapper-2 {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: start; */
+        justify-content: space-between;
+        font-size: 14px;
+        /* line-height: 0.6rem; */
+        border: 1px solid green;
+        
+
+    }
+    /* .wrapper-3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -82,5 +138,7 @@ const Tiv = styled.div`
         font-size: 12px;
         font-weight: bolder;
         color: #717a8e;
+    } */
+
     }
 `

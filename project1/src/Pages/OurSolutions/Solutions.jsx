@@ -52,6 +52,8 @@ width: 100%;
     background-color: #fff;
     font-size: 18px;
     color: #717a8e;
+    padding-bottom: 3rem;
+    
 
   }  
      .wrapper {
@@ -132,6 +134,7 @@ width: 100%;
    @media screen and (max-width: 1075px){
     .solution-wrapper {
       padding: 1rem;
+      margin-bottom: -80px;
     }
     .flexsolution{
       padding: 3.5rem;
@@ -221,5 +224,6 @@ width: 100%;
     width: 95%;
   }
 }
+
 `
 

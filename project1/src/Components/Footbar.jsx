@@ -8,7 +8,7 @@ function Footbar() {
                 <div className='main-wrapper'>
                     <div className='wrapper-1'>
                         <div style={{ fontSize: '30px' }}>tm<span style={{ color: '#00a9ff' }}>30</span></div>
-                        <div>29A Berkley Street, Off King George Road, Onikan Lagos Lagos</div>
+                        <div className='wrapper-mini'>29A Berkley Street, Off King George Road, Onikan Lagos Lagos</div>
                         <div>facbk<span>twiter</span><span>linked</span>youtube</div>
                     </div>
                     <div className='container'>
@@ -57,9 +57,12 @@ const Tiv = styled.div`
         /* display: block; */
         margin: 6rem 3rem ;
         height: 460px;
-        padding-bottom: 2.4rem;
+        /* padding-bottom: 1.4rem; */
+        /* gap: 200px; */
         /* border-bottom: 1px solid grey; */
-        /* justify-content: space-around; */
+        /* justify-content: left; */
+        justify-content: space-between;
+        align-items: flex-start;
 
 
     }
@@ -73,11 +76,15 @@ const Tiv = styled.div`
 
     }
     .container {
-        display: flex;
+        /* display: flex; */
         /* flex-direction: column; */
         align-items: start;
-        justify-content: space-between;
+        /* justify-content: space-around; */
         /* justify-content: center; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 90px;
+
        
     }
     .wrapper-2 {
@@ -92,6 +99,7 @@ const Tiv = styled.div`
         border: 1px solid red;
 
     }
+   
     .wrapper-3 {
         display: flex;
         justify-content: space-between;
@@ -104,6 +112,7 @@ const Tiv = styled.div`
         /* position: relative;
         top: -220px;*/
         line-height: 5.4rem;  
+        margin-top: -150px;
     }
 
     @media screen and (max-width: 1075px ) {
@@ -113,10 +122,14 @@ const Tiv = styled.div`
         .container{
             display: flex;
              justify-content: space-between;
+             /* width: 500px; */
 
             /* justify-content: start; */
         /* align-items: start; */
 
+        }
+        .wrapper-1{
+            line-height: 4rem;
         }
         .wrapper-2 {
         /* display: flex; */
@@ -126,19 +139,65 @@ const Tiv = styled.div`
         font-size: 14px;
         /* line-height: 0.6rem; */
         border: 1px solid green;
+    }
+    p {
+        padding: 1px;
+        width: 130px;
+    }
+    .wrapper-3 {
+        margin-top: 150px;
         
+    }
 
     }
-    /* .wrapper-3 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 2rem 3rem ;
+    @media screen and (max-width: 695px){
+        .container {
+            font-size: 12px;
+            /* scale: 0.90; */
+            margin-left: -4px;
+        }
+        .main-container {
+            margin-left: -20px;
 
-        font-size: 12px;
-        font-weight: bolder;
-        color: #717a8e;
-    } */
-
+        }
     }
+    @media screen and (max-width: 600px) {
+        .main-container {
+            scale: 0.88;
+            margin-top: -150px;
+            margin-left: -60px;
+
+        }
+        .wrapper-1 {
+            /* width: 100%; */
+            /* line-height: normal; */
+            width: 470px;
+        }
+       .wrappermini {
+        line-height: normal;
+       }
+        .container {
+            column-gap: 50px;
+            padding: 4px;
+        }
+        p {
+        /* padding: 2px; */
+        width: 120px;
+        border: 1px solid yellow;
+        
+        }
+        .main-wrapper {
+            /* margin-left: -5px; */
+            padding: 10px;
+        }
+        .wrapper-3 {
+        line-height: 4.8rem;
+        width: 490px;
+        /* margin-left: 80px; */
+        
+        
+    }
+
+}
+
 `

@@ -51,7 +51,7 @@ const Biv = styled.div `
     /* width: 75rem; */
     /* height: 35rem; */
     scale: 0.85;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
   }
   .section-container {
     border: 1px solid #ddd;
@@ -71,5 +71,12 @@ const Biv = styled.div `
     height: 100%;
     object-fit: cover;
   }
+
+
+  @media screen and (max-width: 436px){
+  section {
+        gap: 20px;
+  }
+}
   
 `

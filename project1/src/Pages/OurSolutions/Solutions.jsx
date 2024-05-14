@@ -111,7 +111,7 @@ width: 100%;
   .op-1 {
     width: 320px;
     line-height: 1.6;
-    padding-left: 0px;
+    /* margin-left: 0px; */
   }
   .op-2 {
     width: 750px;
@@ -128,7 +128,8 @@ width: 100%;
       font-Size: 16px;
        padding: 12px 23px;
         color: #fff;
-         border-Radius: 5px;
+         border-Radius: 8px;
+         margin-left: -22px;
   }
   /* @media screen and (max-width: 1041px) */
    @media screen and (max-width: 1075px){
@@ -213,7 +214,7 @@ width: 100%;
 
   }
   .op-1 {
-    width: 90%;
+    width: 98%;
     font-size: 16px;
   }
   button {
@@ -225,5 +226,11 @@ width: 100%;
   }
 }
 
+@media screen and (max-width: 571px){
+  .op-1 {
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+}
 `
 

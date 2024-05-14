@@ -27,7 +27,7 @@ function Projects() {
                                 OurProject.map((item, i) => 
                                     (<div key={i} className='ourproject'>
                                         {/* <div>{item.id}</div> */}
-                                        <div><h1 className='op-1' style={{color:'#000', lineHeight:'2.4rem'}}>{item.title}</h1>
+                                        <div className='op-1'><h1  style={{color:'#000', lineHeight:'2.4rem'}}>{item.title}</h1>
                                         <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
                                         </div>
                                         <div className='op-2'><img src={item.image} /></div>
@@ -79,7 +79,7 @@ width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 450px;
-    padding: 1rem;
+    padding: 2.8rem;
     grid-gap: 130px;
   }
   .ourproject:nth-child(even) {
@@ -107,7 +107,7 @@ width: 100%;
   .op-1 {
     width: 320px;
     line-height: 1.6;
-    padding-left: 30px;
+    /* padding-left: 30px; */
   
   }
   .op-2 {
@@ -126,6 +126,111 @@ width: 100%;
        padding: 12px 23px;
         color: #fff;
          border-Radius: 5px;
+         margin-left: -22px;
   }
+
+
+
+  @media screen and (max-width: 1075px){
+    .project-wrapper {
+      padding: 1rem;
+      margin-bottom: -80px;
+    }
+    /* .productsolution{
+      padding: 3.5rem;
+      border: 1px solid red;
+      gap: 280px;
+      
+    } */
+    /* .oursolution:nth-child(even){
+
+    } */
+  
+    .op-1{
+      width: 220px;
+      font-size: 16px;
+      padding-right: 30px;
+      margin-top: -20px;
+      line-height: 2rem;
+    }
+    .op-2{
+      width: 400px;
+      height: 370px;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      padding-right: 2rem;
+      /* border: 1px solid yellow; */
+      
+    }
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    
+  } 
+
+  @media screen and (max-width: 903px){
+   
+    .container {
+      font-size: 14px;
+      height: 180px;
+      line-height: normal;
+
+    }
+    h2{
+      color: blue;
+      font-size: 24px;
+      font-weight: 900;
+    }
+  
+  .flexproject {
+    /* display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;*/
+    margin-top: -70px;
+    display: block;
+    
+
+  } 
+   .ourproject {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 0px; */
+    display: block;
+    margin-left: -20px; 
+    
+    
+  }
+  .ourproject:nth-child(even){
+    /* display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    color: blue; */
+    display: block;
+    
+
+  }
+  .op-1 {
+    width: 98%;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+  button {
+    margin-left: -20px; 
+
+  }
+  .op-2 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 571px){
+  .op-1 {
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+}
 `
 

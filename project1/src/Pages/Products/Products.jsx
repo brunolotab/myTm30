@@ -58,14 +58,14 @@ function Products() {
                     </section> */}
         </div>
         <div>
-          <div style={{ textAlign: 'center', marginTop: '60px', color: '#000' }}><h1>Our Products</h1></div>
+          <div style={{ textAlign: 'center', marginTop: '60px', marginBottom:'40px', color: '#000' }}><h1>Our Products</h1></div>
           {/* <section> */}
           <div className='flexproduct'>
             {
               ourProducts.map((item, i) =>
               (<div key={i} className='ourproduct'>
                 {/* <div>{item.id}</div> */}
-                <div><h1 className='op-1' style={{ color: '#000' }}>{item.title}</h1>
+                <div  h1 className='op-1'><h1 style={{ color: '#000' }}>{item.title}</h1>
                   <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
                 </div>
                 <div className='op-2'><img src={item.image} /></div>
@@ -131,8 +131,9 @@ width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 450px;
-    padding: 1rem;
+    padding: 2.8rem;
     grid-gap: 130px;
+    /* padding-top: 2rem; */
     
   }
 
@@ -145,7 +146,7 @@ width: 100%;
     align-items: center; 
     /* margin-left: -40px; */
     /* margin: 20px -50px 20px 0px; */
-    gap: 120px;
+    gap: 110px;
 
   }
   
@@ -160,7 +161,7 @@ width: 100%;
   .op-1 {
     width: 320px;//change the width
     line-height: 1.6rem;
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
   .op-2 {
     width: 700px;
@@ -189,6 +190,111 @@ width: 100%;
        padding: 12px 23px;
         color: #fff;
          border-Radius: 5px;
+         margin-left: -22px;
   }
+
+  @media screen and (max-width: 1075px){
+    .product-wrapper {
+      padding: 1rem;
+      margin-bottom: -80px;
+    }
+    /* .productsolution{
+      padding: 3.5rem;
+      border: 1px solid red;
+      gap: 280px;
+      
+    } */
+    /* .oursolution:nth-child(even){
+
+    } */
+  
+    .op-1{
+      width: 220px;
+      font-size: 16px;
+      padding-right: 30px;
+      margin-top: -20px;
+      line-height: 2rem;
+    }
+    .op-2{
+      width: 400px;
+      height: 370px;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+      padding-right: 2rem;
+      /* border: 1px solid yellow; */
+      
+    }
+    img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    
+  } 
+
+  @media screen and (max-width: 903px){
+   
+    .container {
+      font-size: 14px;
+      height: 180px;
+      line-height: normal;
+
+    }
+    h2{
+      color: blue;
+      font-size: 24px;
+      font-weight: 900;
+    }
+  
+  .flexproduct {
+    /* display: flex;
+    flex-direction: column;
+    justify-content:  flex-start;*/
+    margin-top: -70px;
+    display: block;
+    
+
+  } 
+   .ourproduct {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 0px; */
+    display: block;
+    margin-left: -20px; 
+    
+    
+  }
+  .ourproduct:nth-child(even){
+    /* display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    color: blue; */
+    display: block;
+    
+
+  }
+  .op-1 {
+    width: 98%;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+  button {
+    margin-left: -20px; 
+
+  }
+  .op-2 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 571px){
+  .op-1 {
+    font-size: 15px;
+    line-height: 1.5rem;
+  }
+}
+
+
   
 `

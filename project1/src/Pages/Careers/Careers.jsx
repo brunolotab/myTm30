@@ -14,7 +14,7 @@ function Careers() {
                         <h1>
                             Join the A-Class team for Go-getters
                         </h1>
-                        <div>
+                        <div className='containerhead'>
                             You need more than talent to change the world. We have put together an amazing team of
                             optimistic and goal-driven Clever Tigers with passion and skill sets. We encourage diversity and we are open to meeting just about anyone with the right passion and skills regardless of looks, gender, color, tribe, nationality, and disability. At TM30 GLOBAL, the best minds collaborate to create sustainable solutions. It is more than just a job, it’s a commitment to doing beyond our best, and getting it right the first time.
                         </div>
@@ -35,7 +35,7 @@ function Careers() {
                 </div>
                 <div style={{textAlign:'center', padding:'2rem 2rem 0rem 2rem', background:'#fff', color:'#717a8e'}}>
                     <h1 style={{color:'#000'}}>Join us at TM30 Academy</h1>
-                    <p>Read and learn more about our engineering academy, and how you can <p>become a software developer</p></p>
+                    <p className='academy'>Read and learn more about our engineering academy, and how you can <p>become a software developer</p></p>
                     <div className='learnfree'>
                     <div className='img07'><img src={('./Careerimage/Cimage7.png')} alt=''/></div>
                     </div>
@@ -108,6 +108,10 @@ const Civ = styled.div`
     font-size: 19px;
     padding: 5rem 12rem;
     text-align: center;
+  }
+  .containerhead {
+    font-size: 16.5px;
+    color: #fff;
   }
   .learnfree {
     display: flex;
@@ -183,6 +187,30 @@ const Civ = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 1075px){
+    .container {
+      height: 120px;
+      padding: 3rem 3rem;
+      width: 75%;
+    }
+    .container h1 {
+      font-size: larger;
+    }
+    .containerhead {
+      font-size: 12px;
+      line-height: 1.5rem;
+      
+    }
+    .academy {
+      width: 35%;
+      line-height: 0.9rem;
+      /* text-align: center; */
+    }
+    .academy p {
+      line-height: n;
+    }
   }
 
 `

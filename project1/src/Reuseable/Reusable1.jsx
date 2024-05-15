@@ -57,9 +57,10 @@ const Biv = styled.div `
     border: 1px solid #ddd;
     border-radius: 30px;
     line-height: 1.8rem;
-    padding: 18px 18px 12px 18px;
+    padding: 18px 18px 10px 18px;
     font-size: 18px;
     box-shadow: 5px 10px 8px #2222;
+    /* height: 260px; */
   } 
   .image {
     width: 80px;
@@ -73,9 +74,31 @@ const Biv = styled.div `
   }
 
 
-  @media screen and (max-width: 436px){
+  @media screen and (max-width: 967px){
   section {
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        
+  }
+  .section-container {
+    width: 85%;
+    font-size: 17px;
+    padding: 20px 30px 25px 30px;
+  }
+}
+
+
+@media screen and (max-width: 616px){
+
+    section {
+        display: block;
+    }
+    .section-container {
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 30px;
+    margin: 1.5rem 1.5rem 1.5rem -2rem;
   }
 }
   

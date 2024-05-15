@@ -4,42 +4,42 @@ import { SolutionLists } from './SolutionLists'
 
 function Solutions() {
 
-    const ourSolutions = SolutionLists;
+  const ourSolutions = SolutionLists;
 
-    return (
-        <Siv>
-            <div className='solution-wrapper'>
-                <div className="wrapper">
-                    <div className='container'>
-                        <h2>
-                            Solutions.
-                        </h2>
-                        <div>
-                            Take a look at our solutions.
-                        </div>
-                    </div>
-
-                </div>
-                <div>
-                <div style={{textAlign:'center',margin:'40px 0px 80px 0px', color:'#000'}}><h1>Our Solutions</h1></div>
-                <div  className='flexsolution'>
-                            {
-                                ourSolutions.map((item, i) => 
-                                    (<div key={i} className='oursolution'>
-                                        <div className='op-1'><h1 style={{color:'#000'}} >{item.title}</h1>
-                                        <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
-                                        </div>
-                                        <div className='op-2'><img src={item.image} /></div>
-                                    </div>)                                    
-                                )
-                            }
-                        </div>
-                
-                </div>
+  return (
+    <Siv>
+      <div className='solution-wrapper'>
+        <div className="wrapper">
+          <div className='container'>
+            <h2>
+              Solutions.
+            </h2>
+            <div>
+              Take a look at our solutions.
             </div>
+          </div>
 
-        </Siv>
-    )
+        </div>
+        <div>
+          <div style={{ textAlign: 'center', margin: '40px 0px 80px 0px', color: '#000' }}><h1>Our Solutions</h1></div>
+          <div className='flexsolution'>
+            {
+              ourSolutions.map((item, i) =>
+              (<div key={i} className='oursolution'>
+                <div className='op-1'><h1 style={{ color: '#000' }} >{item.title}</h1>
+                  <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
+                </div>
+                <div className='op-2'><img src={item.image} /></div>
+              </div>)
+              )
+            }
+          </div>
+
+        </div>
+      </div>
+
+    </Siv>
+  )
 }
 
 export default Solutions
@@ -87,7 +87,7 @@ width: 100%;
 
   }
   .oursolution:nth-child(even) {
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: center ;
@@ -95,7 +95,7 @@ width: 100%;
     align-items: center; 
     /* margin-left: -40px; */
     /* margin: 20px -50px 20px 0px; */
-    gap: 110px;
+    gap: 90px;
 
   }
   
@@ -106,16 +106,20 @@ width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    gap: 70px;
+
     
   }
   .op-1 {
-    width: 320px;
+    width: 60%;
     line-height: 1.6;
     /* margin-left: 0px; */
+    background-color: green;
   }
   .op-2 {
-    width: 750px;
+    width: 70%;
     height: 100%;
+    background-color: yellow;
  }
   img {
     width: 100%;
@@ -144,22 +148,22 @@ width: 100%;
       
     }
     /* .oursolution:nth-child(even){
-
-    } */
-  
+        margin-top: -100px;
+    }
+   */
     .op-1{
-      width: 220px;
+      width: 65%;
       font-size: 16px;
-      padding-right: 30px;
+      /* padding-right: 30px; */
       margin-top: -20px;
       line-height: 2rem;
     }
     .op-2{
-      width: 400px;
+      width: 75%;
       height: 370px;
       margin-top: 5rem;
       margin-bottom: 3rem;
-      padding-right: 2rem;
+      /* padding-right: 2rem; */
       /* border: 1px solid yellow; */
       
     }

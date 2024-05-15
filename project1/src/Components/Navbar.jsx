@@ -33,17 +33,17 @@ function Navbar() {
                 <div className='detail'>
                     <NavLink to = {'/About'}><div className='hideonmobile' >About</div></NavLink>
                     <NavLink to ={'/Contact'}><div className='hideonmobile'> <div className='contact'>Contact</div></div></NavLink>
-                    <div className='menu-button' onClick={showsidebar}><BiMenu style={{fontSize:'26px'}}/></div>
+                    <div className='menu-button' onClick={showsidebar}><BiMenu style={{fontSize:'26px', color:'#66d5f3'}}/></div>
                 </div>
                 <div className='sidebar'>
                         <div onClick={hidesidebar} style={{fontSize:'26px'}}>X</div>
-                        <NavLink to = {'/'} ><div>Home</div></NavLink>
-                        <NavLink to = {'/Solutions'}><div>Our Solution</div></NavLink>
-                        <NavLink to = {'/Products'}><div>Products</div></NavLink>
-                        <NavLink to = {'/Projects'}><div>Projects</div></NavLink>
-                        <NavLink to = {'/Careers'}><div>Careers</div></NavLink>
-                        <NavLink to = {'/About'}><div>About</div></NavLink>
-                        <NavLink to ={'/Contact'}><div className='contact' >Contact</div></NavLink>
+                        <NavLink to = {'/'} onClick={hidesidebar} ><div>Home</div></NavLink>
+                        <NavLink to = {'/Solutions'} onClick={hidesidebar} ><div>Our Solution</div></NavLink>
+                        <NavLink to = {'/Products'} onClick={hidesidebar} ><div>Products</div></NavLink>
+                        <NavLink to = {'/Projects'} onClick={hidesidebar} ><div>Projects</div></NavLink>
+                        <NavLink to = {'/Careers'} onClick={hidesidebar} ><div>Careers</div></NavLink>
+                        <NavLink to = {'/About'} onClick={hidesidebar} ><div>About</div></NavLink>
+                        <NavLink to ={'/Contact'} onClick={hidesidebar} ><div className='contact' >Contact</div></NavLink>
                 
                     </div>
             </section>
@@ -129,6 +129,7 @@ a.active {
   align-items: flex-start;
   justify-content: flex-start;
   line-height: 3rem;
+  /* padding-left: 10px; */
   
 
 }
@@ -170,6 +171,7 @@ a.active {
     /* height: 100vh; */
     height: 100%;
     
+    
   }
 } 
 /* @media screen and (max-width: 998px) {
@@ -191,7 +193,8 @@ a.active {
    color: #000;
    height: 100%;
    line-height: 4.6rem;
-   padding-left: 0.5rem;
+   
+   
   }
  
 }

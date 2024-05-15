@@ -146,7 +146,7 @@ width: 100%;
     align-items: center; 
     /* margin-left: -40px; */
     /* margin: 20px -50px 20px 0px; */
-    gap: 110px;
+    gap: 130px;
 
   }
   
@@ -159,12 +159,12 @@ width: 100%;
     align-items: center; 
   }
   .op-1 {
-    width: 320px;//change the width
+    width: 60%;//change the width
     line-height: 1.6rem;
     /* padding-left: 30px; */
   }
   .op-2 {
-    width: 700px;
+    width: 70%;
     height: 100%;
     
   };
@@ -204,9 +204,9 @@ width: 100%;
       gap: 280px;
       
     } */
-    /* .oursolution:nth-child(even){
+    .oursolution:nth-child(even){
 
-    } */
+    }
   
     .op-1{
       width: 220px;
@@ -241,7 +241,7 @@ width: 100%;
 
     }
     h2{
-      color: blue;
+      
       font-size: 24px;
       font-weight: 900;
     }

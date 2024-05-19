@@ -77,7 +77,7 @@ const Siv = styled.div `
     } 
 
     /* @media screen and (max-width:1075px){ */
-    @media screen and (max-width:1075px){
+    @media screen and (max-width:1200px){
 
         html,body{
             width: 100%;
@@ -91,7 +91,7 @@ const Siv = styled.div `
             /* margin-left: 30px; */
             /* padding-right: 30px; */
             width: 58%;
-            left: -150px;
+            left: -20px;
         }
     }
     /* @media (min-width: 851px) and (max-width:1040px){
@@ -101,7 +101,7 @@ const Siv = styled.div `
         }
     } */
      /* @media screen and  (max-width: 1150px) and (min-width: 751px){ */
-     @media screen and  (max-width: 992px) and (min-width: 769px){
+     @media screen and  (max-width: 995px) {
         html,body{
             width: 100%;
             height: 100%;
@@ -111,7 +111,7 @@ const Siv = styled.div `
         }
         .slider {
             
-            width: 43%;
+            width: 53%;
             left: -10px;
         }
     } 

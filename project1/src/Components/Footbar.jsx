@@ -74,7 +74,7 @@ const Tiv = styled.div`
     }
     .container {
        
-        align-items: start;
+        /* align-items: start; */
         
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -103,9 +103,16 @@ const Tiv = styled.div`
        
         line-height: 5.4rem;  
         margin-top: -150px;
+        width: 90%;
     }
 
     @media screen and (max-width: 1075px ) {
+        .main-container{
+            /* margin-top: 200px; */
+            /* border: 1px solid red; */
+            /* width: 90%; */
+            
+        }
         .main-wrapper{
             display: block;
            
@@ -150,10 +157,18 @@ const Tiv = styled.div`
     }
     @media screen and (max-width: 613px)  {
         .main-container {
-            scale: 0.99;
-            margin-top: -150px;
-            margin-left: -60px;
+            /* scale: 0.99; */
+            /* margin-top: -150px; */
+            margin-left: 2%;
+            /* width: 10px; */
+            border: 1px solid blue;
+            /* margin-right: -200%; */
 
+        }
+        .main-wrapper {
+            position: relative;
+           top: -100px;
+           padding-left: -40%;
         }
         .wrapper-1 {
            
@@ -172,31 +187,53 @@ const Tiv = styled.div`
         /* border: 1px solid yellow; */
         
         }
-        .main-wrapper {
-          
-            padding: 10px;
-        }
+        
         .wrapper-3 {
         line-height: 4.8rem;
+        position: relative;
+           top: -150px;
+           /* padding-left: 40%; */
         
     }
-    @media screen and (max-width: 520px) {
+    @media screen and (max-width: 521px) {
+        .main-container {
+            margin-top: -5px;
+            position: relative;
+            left: -2%;
+            /* margin-left: 2%; */
+        }
+        .wrapper-mini {
+            line-height: normal;
+        }
+        
         .wrapper-1 {
             width: 99%;
+            /* ma-top: -800px; */
+        }
+        .wrapper-2{
+            margin-bottom: 3%;
         }
         .wrapper-3 {
             margin-right: -10px; 
+            margin-top: 50%;
+            /* margin-top: 220px; */
+            line-height: 1.6rem;
         }
     }
         
     @media screen and (max-width: 473px) {
+        .main-container {
+            margin-left: 3%;
+            
+        }
         p {
        
        width: 85px;
        
        }
        .container {
-        column-gap: 25px;
+        column-gap: 1%;
+        /* column-gap: 20px; */
        }
     
        

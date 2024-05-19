@@ -67,10 +67,10 @@ function Home() {
                 <div style={{background:'#f9fbfa', padding:'7rem 5rem 5rem 5rem'}}>
                     <div style={{color:'#24b0ff', fontSize:'19px'}}>Our Unique Solutions include</div><br/>
                     <h1>Agency Banking solution</h1><br/>
-                    <div style={{lineHeight:'0.5'}}><p>TM30 Agency Banking Solution empowers you to effectively drive financial inclusion, scale customers acquisition and increase</p>
-                    <p>profitability.</p></div><br/>
-                    <div style={{lineHeight:'0.5'}}><p>We have designed our solution with the success of your business in mind, the platform enables you take advantage of current</p>
-                    <p>and future financial services opportunities.</p></div><br/>
+                    <div style={{lineHeight:'1.5rem',width:'80%'}}><p>TM30 Agency Banking Solution empowers you to effectively drive financial inclusion, scale customers acquisition and increase
+                    profitability.</p></div><br/>
+                    <div style={{lineHeight:'1.5rem',width:'80%'}}><p>We have designed our solution with the success of your business in mind, the platform enables you take advantage of current
+                    and future financial services opportunities.</p></div><br/>
                     <div >
                             <button style={{
                                 padding: '15px', background: '#00A3F6',
@@ -164,7 +164,7 @@ const Div = styled.div`
          display: flex ;
           justify-content: center;
            align-items: center;
-            max-width: 850px;
+            max-width: 70%;
             /* border: 1px solid red; */
     }
     .bg-video {
@@ -174,18 +174,17 @@ const Div = styled.div`
         
     }
 
-    @media screen and (max-width: 1041px) {
+    @media screen and (max-width: 1075px) {
             html,body{
-            width: 100%;
+            /* width: 100%;
             height: 100%;
             margin: 0;
-            padding: 0;
-            overflow-x: hidden;
+            padding: 0; */
+            /* overflow-x: hidden; */
         }
-        .backtrust{
-            /* margin-right: -100px; */
+        /* .backtrust{
             width: 100%;
-        }
+        } */
         .backtruststyle {
             margin-right: 0;
             width: 60%;
@@ -215,7 +214,8 @@ const Div = styled.div`
         }
        
         .backtruststyle {
-            width: 360px;
+            width: 55%;
+            /* width: 360px; */
             
         }
        

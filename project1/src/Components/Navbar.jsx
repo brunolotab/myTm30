@@ -148,7 +148,7 @@ a.active {
     color:#fff;
      background:#00a9ff;
 }
-@media(max-width: 1080px){
+@media(max-width: 1200px){
     .main{
         font-size: 16px;
     

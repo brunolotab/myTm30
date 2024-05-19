@@ -74,31 +74,62 @@ const Biv = styled.div `
   }
 
 
-  @media screen and (max-width: 967px){
+  @media screen and (max-width: 967px) {
   section {
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(2,1fr);
+        justify-content: center; */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
         
         
   }
   .section-container {
-    width: 85%;
+    /* width: 85%;
+    font-size: 17px;
+    padding: 20px 30px 25px 30px; */
+    width: 35%;
+    height: 320px;
     font-size: 17px;
     padding: 20px 30px 25px 30px;
   }
+} 
+
+
+@media screen and (max-width: 680px) {
+    section {
+        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-left: 20%; */
+    }
+    .section-container {
+    width: 52%;
+    margin-bottom: 15px;
+
+
+    }
 }
+
 
 
 @media screen and (max-width: 616px){
 
     section {
         display: block;
+        /* padding-left: -20%; */
+
     }
     .section-container {
     width: 100%;
+    height: none;
     font-size: 17px;
     padding: 10px 30px;
-    margin: 1.5rem 1.5rem 1.5rem -2rem;
+    /* margin: 1.5rem 1.5rem 1.5rem -2rem; */
   }
 }
   

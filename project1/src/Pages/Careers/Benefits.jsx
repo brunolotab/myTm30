@@ -9,7 +9,7 @@ function Benefits() {
     return (
         <Biv>
             <div style={{background:'#f9fafb'}}>
-                <div style={{textAlign:'center'}}>
+                <div className='wrapper'>
                     <h1 style={{color:'#000'}}>Benefits and Perks of Joining TM30</h1>
                     <p>We are dedicated to making the rest of your life as rewarding as your job.</p>
                 </div>
@@ -38,25 +38,51 @@ function Benefits() {
 export default Benefits
 
 const Biv = styled.div `
-    display: flex;
+    /* display: flex;
     justify-content: center;
     width: 100%;
-    color: #717a8e;
+    color: #717a8e; */
+.wrapper {
+  text-align: center;
+  /* width: 80%; */
+  /* display: block; */
 
+      /* width: 100%; */
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .interest2 p {
+    width: 60%;
+}
+h1 {
+  /* width: 60%; */
+}
  .career-flex {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 30;
+    grid-gap: 30px;
     padding: 10px;
+    border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    scale: 0.9;
+    /* gap: 0.6rem; */
   }
 
   .career-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
-    padding: 20px;
-    width: 120px;
+    padding: 10px;
+    width: 10%;
+    /* width: 120px; */
    
 
   }
@@ -75,7 +101,7 @@ const Biv = styled.div `
 
   }
   .career-image {
-    width: 40%;
+    width: 50%;
     height: 40%;
     /* text-align: center; */
     /* object-fit: cover; */
@@ -84,5 +110,26 @@ const Biv = styled.div `
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+
+  @media screen and (max-width: 961px){
+    .career-flex {
+    
+    /* grid-template-columns: repeat(3, 1fr); */
+    flex-wrap: wrap;
+    align-content: space-around;
+  
+    .career-container {
+      width: 30%;
+      /* border: 1px solid red; */
+    margin-bottom: 20px;
+
+
+    }
+
+    /* width: 100%; */
+    
+  }
   }
 `

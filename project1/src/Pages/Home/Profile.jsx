@@ -50,7 +50,7 @@ const Civ = styled.div`
     }
     .image-1 {
         /* width: 750px; */
-        width: 70%;
+        width: 100%;
         height: 576px;
         /* border: 1px solid red; */
         
@@ -96,6 +96,11 @@ const Civ = styled.div`
             width: 100%;
             margin-top: 50px;
 
+        }
+        .img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
         }
         
     }

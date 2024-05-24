@@ -51,7 +51,7 @@ function Careers() {
           <p style={{ background: '#c6eaff', padding: '2px 15px', color: '#717a8e', borderRadius: '30px' }}> Open Positions</p>
           <h1>We’re looking for talented people</h1>
           <p className='philosophy'>Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do you best work.</p><br />
-          <div className='img08'><img src={'./Careerimage/Cimage8.png'} alt='' /></div><br />
+          <div className='img08'><img src={'./Careerimage/Cimage8.png'} alt='' /></div>
           <div className='position'><p>There are no open positions for now.</p></div>
           <br /><br />
           <div><img src={'./Careerimage/Cimage9.png'} alt='' /></div>
@@ -191,6 +191,8 @@ const Civ = styled.div`
     border: 1px solid gray;
     background-color: #c6eaff;
   } */
+
+  
   .philosophy {
     text-align: center;
      line-height: 1.5rem;
@@ -199,10 +201,12 @@ const Civ = styled.div`
        width: 45%;
   }
   .img08 {
-    width: 68%;
+    width: 70%;
     /* width: 900px; */
-    height: 300px;
+    /* height: 300px; */
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
     /* z-index: 50; */
   }
   .img08 img {
@@ -324,7 +328,7 @@ const Civ = styled.div`
       margin-bottom: -40px;
     }
     .img08 {
-    width: 58%;
+    width: 70%;
     height: 180px;
     margin-bottom: 10px;
     
@@ -350,7 +354,25 @@ const Civ = styled.div`
       top: -35px;
       padding-left: 84%;
     }
+    .img08 {
+    width: 90%;
+    margin-bottom: 10px;
+    
+    }
   }
+  @media screen and (max-width: 600px){
+    .open-career h1 {
+      font-size: 24px;
+    }
+    .img08 {
+    width: 90%;
+    margin-bottom: 10px;
+    /* padding-left: 45px; */
+    /* padding-left: 8%; */
+    
+    }
+  }
+
 
 
 `

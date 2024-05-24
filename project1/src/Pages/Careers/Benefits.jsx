@@ -58,7 +58,7 @@ const Biv = styled.div `
     width: 60%;
 }
 h1 {
-  /* width: 60%; */
+  width: 60%;
 }
  .career-flex {
     /* display: grid;

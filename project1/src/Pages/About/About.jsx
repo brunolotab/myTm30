@@ -113,7 +113,7 @@ const Aiv = styled.div`
         }
         .contain-about {
              padding: 4rem 2rem;
-             border: 1px solid red;
+             /* border: 1px solid red; */
             width: 95%;
         }
         .about {
@@ -122,4 +122,22 @@ const Aiv = styled.div`
 
         }
   }
+  @media screen and (max-width: 901px) {
+    .contain-about h1 {
+        font-size: 23px;
+        font-weight: 700;
+
+
+    }
+    .contain-about p {
+        font-size: 16px;
+        font-weight: bolder;
+    }
+    .about {
+        font-size: 15px;
+    }
+
+    
+  }
+
 `

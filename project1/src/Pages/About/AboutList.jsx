@@ -98,4 +98,17 @@ const Aiv = styled.div `
     height: 100%;
     object-fit: cover;
   }
+
+@media screen and (max-width: 586px){
+    .gridwrapper {
+        display: block;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    div {
+        font-size: 15px;
+    }
+}
+
 `

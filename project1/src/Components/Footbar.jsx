@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Footbar() {
     return (
         <Tiv>
-            <div className='main-container' style={{ padding: '1.5rem' }}>
+            <div className='main-container'>
                 <div className='main-wrapper'>
                     <div className='wrapper-1'>
                         <div style={{ fontSize: '30px' }}>tm<span style={{ color: '#00a9ff' }}>30</span></div>
@@ -52,6 +52,15 @@ function Footbar() {
 export default Footbar
 
 const Tiv = styled.div`
+    .main-container {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            padding: 1.5rem ;
+    }
     .main-wrapper { 
         display: flex;
        
@@ -60,21 +69,21 @@ const Tiv = styled.div`
     
         justify-content: space-between;
         align-items: flex-start;
+        width: 90%;
 
 
     }
     .wrapper-1 {
         position: relative;
         line-height: 4rem;
-        color: #717a8e;
+        color: #717a8e;        
 
-        /* top:-30px; */
-        
-
+    }
+    .wrapper-mini {
+        font-size: 18px;
     }
     .container {
        
-        /* align-items: start; */
         
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -87,7 +96,6 @@ const Tiv = styled.div`
 
         font-size: 14px;
         line-height: 1.6rem;
-        /* border: 1px solid red; */
 
     }
    
@@ -107,12 +115,7 @@ const Tiv = styled.div`
     }
 
     @media screen and (max-width: 1075px ) {
-        .main-container{
-            /* margin-top: 200px; */
-            /* border: 1px solid red; */
-            /* width: 90%; */
-            
-        }
+        
         .main-wrapper{
             display: block;
            
@@ -132,7 +135,6 @@ const Tiv = styled.div`
         
         font-size: 14px;
        
-        /* border: 1px solid green; */
     }
     p {
         padding: 1px;
@@ -147,7 +149,6 @@ const Tiv = styled.div`
     @media screen and (max-width: 695px){
         .container {
             font-size: 12px;
-            /* scale: 0.90; */
             margin-left: -4px;
         }
         .main-container {
@@ -157,12 +158,8 @@ const Tiv = styled.div`
     }
     @media screen and (max-width: 613px)  {
         .main-container {
-            /* scale: 0.99; */
-            /* margin-top: -150px; */
             margin-left: 2%;
-            /* width: 10px; */
             border: 1px solid blue;
-            /* margin-right: -200%; */
 
         }
         .main-wrapper {
@@ -192,15 +189,12 @@ const Tiv = styled.div`
         line-height: 4.8rem;
         position: relative;
            top: -150px;
-           /* padding-left: 40%; */
         
     }
     @media screen and (max-width: 521px) {
         .main-container {
             margin-top: -5px;
-            position: relative;
-            left: -2%;
-            /* margin-left: 2%; */
+            
         }
         .wrapper-mini {
             line-height: normal;
@@ -208,24 +202,18 @@ const Tiv = styled.div`
         
         .wrapper-1 {
             width: 99%;
-            /* ma-top: -800px; */
         }
         .wrapper-2{
             margin-bottom: 3%;
         }
         .wrapper-3 {
-            margin-right: -10px; 
             margin-top: 50%;
-            /* margin-top: 220px; */
             line-height: 1.6rem;
         }
     }
         
     @media screen and (max-width: 473px) {
-        .main-container {
-            margin-left: 3%;
-            
-        }
+       
         p {
        
        width: 85px;

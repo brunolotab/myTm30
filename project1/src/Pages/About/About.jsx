@@ -23,7 +23,7 @@ function About() {
                             performance which has made us one of the most sought after technology companies.
                         </div>
                     </div>
-                </div><br />
+                </div>
                 <div className='contain-about'>
                     <p style={{ color: '#66d5f3' }}>We embrace the S.P.I.C.E values</p>
                     <h1 style={{ color: '#000' }}>Our Core Values</h1>

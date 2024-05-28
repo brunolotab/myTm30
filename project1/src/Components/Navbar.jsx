@@ -182,17 +182,19 @@ a.active {
 } */
 
 @media screen and (max-width: 600px){
-  .sidebar {
+  .sidebar link {
     height: 100vh;
    /* display: block; */
    /* display: none;  */
-   width: 100%;
+   /* width: 100%; */
    text-align: left;
    font-size: 27px;
    /* font-weight: 200; */
    color: #000;
    height: 100%;
    line-height: 4.6rem;
+   color:  red;
+   /* padding-left: 2rem; */
    
    
   }

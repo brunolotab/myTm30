@@ -275,15 +275,56 @@ const Piv = styled.div`
      
 
   }
+  @media screen and (max-width: 860px){
+     .director-container{
+    column-gap: 5rem;
+    }
+  }
+  @media screen and (max-width: 800px){
+    .director-container{
+    column-gap: 4rem;
+    }
+  }
+  @media screen and (max-width: 775px){
+    .director-container{
+    column-gap: 3rem;
+    }
+  }
+  @media screen and (max-width: 750px){
+    .director-container{
+    column-gap: 2rem;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .director-container{
+    column-gap: 1rem;
+    }
+  }
+
   @media screen and (max-width: 655px){
         .director-container {
         gap: 0px;
 
         }
+
+        .hiring p {
+            width: 80%;
+            text-align: center;
+            line-height: normal;
+        }
   }
   @media screen and (max-width: 611px){
+    .director-wrapper {
+        margin-bottom: -7rem;
+    }
+    .director-wrapper h1 {
+        font-size: 20px;
+    }
     .director-container, .management-container {
         display: block;
+    }
+    .management-wrapper h1 {
+        font-size: 20px;
     }
 
   }

@@ -49,6 +49,7 @@ export default About
 
 
 const Aiv = styled.div`
+    
       .career-wrapper {
     padding: 2rem ;
     /* padding: 2rem 3rem; */
@@ -59,12 +60,13 @@ const Aiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+   
 
   }  
      .wrapper {
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
 
   }
   .container {
@@ -136,8 +138,21 @@ const Aiv = styled.div`
     .about {
         font-size: 15px;
     }
+}
+  @media screen and (max-width: 655px) {
+    .wrapper{
+        padding-left: 20px;
+        
 
+    }
     
+  }
+  @media screen and (max-width: 516px) {
+    .career-wrapper{
+        padding-left: 20px;
+        width: 100%;
+
+    }
   }
 
 `

@@ -11,29 +11,29 @@ function AboutList() {
     return (
         <Aiv>
             <div>
-                <div className='gridwrapper'>
-                    <div className='image-wrap'>
+                <div className='gridwrapper' >
+                    <div className='image-wrap' data-aos="zoom-in">
                         <div className='Aimage'><img src= {Aimage1} alt=''/></div>
                         <h3>Solutions</h3>
                         <div>
                         We develop solutions for your business everyday needs
                         </div>
                     </div>
-                    <div className='image-wrap'>
+                    <div className='image-wrap' data-aos="zoom-in">
                         <div className='Aimage'><img src= {Aimage2} alt=''/></div>
                         <h3>Possibilities</h3>
                         <div>
                         Difficulty does not exist in our reality.
                         </div>
                     </div>
-                    <div className='image-wrap'>
+                    <div className='image-wrap' data-aos="zoom-in">
                         <div className='Aimage'><img src= {Aimage3} alt=''/></div>
                          <h3>Do the impossible</h3>
                         <div>
                         Be energized by difficult problems. Revel in unknowns. Ask "Why?", but always question, "Why not?"
                         </div>
                     </div>
-                    <div className='image-wrap'>
+                    <div className='image-wrap' data-aos="zoom-in">
                     <div className='Aimage'><img src= {Aimage4} alt=''/></div>
                         
                         <h3>Creativity</h3>
@@ -41,7 +41,7 @@ function AboutList() {
                         We are continually drawing out the best arrangements in the best innovative manner.
                         </div>
                     </div>
-                    <div className='image-wrap'>
+                    <div className='image-wrap' data-aos="zoom-in">
                     <div className='Aimage'><img src= {Aimage5} alt=''/></div>
 
                         <h3>Excellence</h3>
@@ -49,7 +49,7 @@ function AboutList() {
                         We do not settle for less. Excellence is our norm.
                         </div>
                     </div>
-                    <div className='image-wrap'>
+                    <div className='image-wrap' data-aos="zoom-in">
                     <div className='Aimage'><img src= {Aimage6} alt=''/></div>
 
                         <h3>Innovation</h3>
@@ -74,13 +74,14 @@ const Aiv = styled.div `
     grid-gap: 40px;
     scale: 0.85;
     line-height: 1.8rem;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #717a8e;
     /* border: 1px solid green; */
   }
   h3 {
     color:#000;
+    font-size: 19px;
   }
   .image-wrap {
     display: flex;

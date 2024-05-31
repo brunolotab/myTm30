@@ -64,7 +64,7 @@ section{
     color: #000;
     align-items:center;
     font-size: 18px;
-    width: 90%;
+    width: 95%;
     
 }
 .logo {

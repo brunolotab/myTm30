@@ -5,7 +5,7 @@ function Reusable1() {
     return (
         <Biv>
             <div>
-                <section>
+                <section data-aos="zoom-in">
                     <div className='section-container'>
                         <div className='image'><img src={('../Pimage6.gif')} alt='' /></div>
                         <h3>Inspired by people</h3>
@@ -47,7 +47,7 @@ const Biv = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
     /* width: 75rem; */
     /* height: 35rem; */
     scale: 0.85;
@@ -58,10 +58,15 @@ const Biv = styled.div `
     border-radius: 30px;
     line-height: 1.8rem;
     padding: 18px 18px 10px 18px;
-    font-size: 18px;
+    font-size: 16px;
+    color: #7777;
     box-shadow: 5px 10px 8px #2222;
     /* height: 260px; */
   } 
+  h3 {
+    color: black;
+    font-size: 20px;
+  }
   .image {
     width: 80px;
     height: 80px;

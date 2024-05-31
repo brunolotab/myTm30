@@ -10,11 +10,11 @@ function Solutions() {
     <Siv>
       <div className='solution-wrapper'>
         <div className="wrapper">
-          <div className='container'>
-            <h2>
+          <div className='container' data-aos="zoom-in">
+            <h2 data-aos="fade-down">
               Solutions.
             </h2>
-            <div>
+            <div data-aos="fade-down" data-aos-delay="300">
               Take a look at our solutions.
             </div>
           </div>
@@ -26,10 +26,10 @@ function Solutions() {
             {
               ourSolutions.map((item, i) =>
               (<div key={i} className='oursolution'>
-                <div className='op-1'><h1 style={{ color: '#000' }} >{item.title}</h1>
+                <div className='op-1' data-aos="zoom-in"><h1 style={{ color: '#000' }} >{item.title}</h1>
                   <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
                 </div>
-                <div className='op-2'><img src={item.image} /></div>
+                <div className='op-2' data-aos="zoom-in" data-aos-delay="300"><img src={item.image} /></div>
               </div>)
               )
             }
@@ -66,8 +66,6 @@ width: 100%;
     justify-content: center;
     align-items: center;
     background-color: #66d5f3;
-    /* -webkit-animation: sol 5s linear infinite ; */
-    /* transition: all 2s; */
     width: 85%;
     height: 250px;
     line-height: 2.5rem;
@@ -113,8 +111,7 @@ width: 100%;
   .op-1 {
     width: 60%;
     line-height: 1.6;
-    /* margin-left: 0px; */
-    background-color: green;
+   
   }
   .op-2 {
     width: 70%;

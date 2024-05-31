@@ -7,12 +7,12 @@ function Profile() {
     return (
         <Civ>
             <div className='pro-1'>
-                <div className='pro-2' style={{ marginTop: '50px' }}>
+                <div className='pro-2' data-aos="fade-right" style={{ marginTop: '50px' }}>
                     <h1 className='pro-3' style={{color: '#00A9ff'}}>
                         Empowering the Future 
                         With Inovative Software.
                     </h1>
-                    <div className='pro-4'>
+                    <div className='pro-4'  data-aos="fade-right"  data-aos-delay="400">
                         At TM30 Global Limited, we are more than just a software development firm; we are pioneers, trailblazers, and visionaries. Our team of talented engineers, designers, and strategists are dedicated to crafting bespoke software solutions that align with our clients' unique objectives, empowering them to achieve their goals with utmost efficiency and innovation.
                         <div style={{ marginTop: '8px' }}>
                             <button style={{ background: '#00A9ff', border: 'none', fontSize: '16px', padding: '12px 33px', color: '#fff', borderRadius: '5px' }}>
@@ -22,7 +22,7 @@ function Profile() {
                     </div>
 
                 </div>
-                <div className='image-1' >
+                <div className='image-1' data-aos="fade-left" >
                     <img src={Image1} alt='' className='img' />
                 </div>
             </div>

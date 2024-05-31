@@ -23,7 +23,7 @@ function Home() {
 
                 <div className='content'>
                     <div >
-                        <h1 className='contenthead'>
+                        <h1 className='contenthead' data-aos="fade-down">
                             Pioneering innovation in
                             <br />
                             Software Solutions.
@@ -32,7 +32,7 @@ function Home() {
                     </div>
                     <div className='subcontent'>
                         {/* <div className='subcontent2'> */}
-                            <p className='subcontent3'>
+                            <p className='subcontent3' data-aos="fade-down" data-aos-delay="3000" >
                                 <span style={{ fontWeight: 'bold' }}>Tm30 Global Limited ,</span> a leading software solution company<br />
                                 at the forefont of revolutionizing industries through<br />
                                 cutting-edge technologies and inovative software<br />
@@ -43,7 +43,12 @@ function Home() {
                             <button style={{
                                 padding: '15px', background: '#00A3F6',
                                 borderRadius: '6px', border: 'none', fontSize: '18px', color: '#fff'
-                            }} onClick={() => setOpenModal(true)}>Request a demo</button>
+                                }} onClick={() => setOpenModal(true)}  data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0"> 
+                                Request a demo
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -64,7 +69,8 @@ function Home() {
             </div>
             <div>
                 <div style={{ background: '#fff' }}><BodyGrid /></div>
-                <div style={{background:'#f9fbfa', padding:'7rem 5rem 5rem 5rem'}}>
+                <div style={{background:'#f9fbfa', padding:'7rem 5rem 5rem 5rem'}} >
+                    <div data-aos="zoom-in">
                     <div style={{color:'#24b0ff', fontSize:'19px'}}>Our Unique Solutions include</div><br/>
                     <h1>Agency Banking solution</h1><br/>
                     <div style={{lineHeight:'1.5rem',width:'80%'}}><p>TM30 Agency Banking Solution empowers you to effectively drive financial inclusion, scale customers acquisition and increase
@@ -77,6 +83,7 @@ function Home() {
                                 borderRadius: '6px', border: 'none', fontSize: '18px', color: '#fff'
                             }} onClick={() => setOpenModal(true)}>Learn more</button>
                         </div>
+                    </div>
 
                 </div>
             </div>

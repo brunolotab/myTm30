@@ -10,11 +10,11 @@ function Careers() {
     <Civ>
       <div className='career-wrapper'>
         <div className="wrapper">
-          <div className='container'>
-            <h1>
+          <div className='container' data-aos="zoom-in">
+            <h1 data-aos="fade-down">
               Join the A-Class team for Go-getters
             </h1>
-            <div className='containerhead'>
+            <div className='containerhead' data-aos="fade-down" data-aos-delay="300">
               You need more than talent to change the world. We have put together an amazing team of
               optimistic and goal-driven Clever Tigers with passion and skill sets. We encourage diversity and we are open to meeting just about anyone with the right passion and skills regardless of looks, gender, color, tribe, nationality, and disability. At TM30 GLOBAL, the best minds collaborate to create sustainable solutions. It is more than just a job, it’s a commitment to doing beyond our best, and getting it right the first time.
             </div>
@@ -83,11 +83,11 @@ export default Careers
 const Civ = styled.div`
     width: 100%;
   .career-wrapper {
-    padding: 2rem 3rem;
+    padding: 2rem 6rem;
     /* background-color: #fff; */
     font-size: 18px;
     color: #717a8e;
-
+    margin-left: 5%;
   }  
      .wrapper {
     display: flex;
@@ -99,9 +99,7 @@ const Civ = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #66d5f3;
-    /* -webkit-animation: sol 5s linear infinite ; */
-    /* transition: all 2s; */
-    /* width: 54%; */
+    width: 100%;
     height: 250px;
     line-height: 2rem;
     color: #fff;

@@ -9,14 +9,14 @@ function About() {
 
             <div className='career-wrapper'>
                 <div className="wrapper">
-                    <div className='container'>
-                        <div className='container1'>
+                    <div className='container' data-aos="zoom-in">
+                        <div className='container1' data-aos="fade-down">
                         <p>About us</p>
                         <h1>
                             Who we are
                         </h1>
                         </div>
-                        <div className='container2'>
+                        <div className='container2' data-aos="fade-down" data-aos-delay="300">
                             We are a software company with strong technical expertise in developing innovative
                             solutions that drive digital transformation in the IT industry. Leveraging our experience,
                             we deliver our solutions with flexibility, responsiveness, efficiency and unmatched

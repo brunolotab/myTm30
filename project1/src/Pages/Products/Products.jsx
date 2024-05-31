@@ -13,11 +13,11 @@ function Products() {
     <Civ>
       <div className='product-wrapper'>
         <div className="wrapper">
-          <div className='container'>
-            <h2>
+          <div className='container'  data-aos="zoom-in">
+            <h2 data-aos="fade-down">
               Product
             </h2>
-            <div>
+            <div data-aos="fade-down" data-aos-delay="300">
               Take a look at our past products.
             </div>
           </div>
@@ -65,10 +65,10 @@ function Products() {
               ourProducts.map((item, i) =>
               (<div key={i} className='ourproduct'>
                 {/* <div>{item.id}</div> */}
-                <div  h1 className='op-1'><h1 style={{ color: '#000' }}>{item.title}</h1>
+                <div  h1 className='op-1'  data-aos="zoom-in"><h1 style={{ color: '#000' }}>{item.title}</h1>
                   <div className='op-1'>{item.description}</div><div style={{ margin: '8px 25px' }}><button>View new project</button></div>
                 </div>
-                <div className='op-2'><img src={item.image} /></div>
+                <div className='op-2' data-aos="zoom-in" data-aos-delay="300"><img src={item.image} /></div>
               </div>)
               )
             }
